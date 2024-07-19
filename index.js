@@ -12,36 +12,21 @@ const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=$
 
 const pokemonUrl = "https://pokeapi.co/api/v2/pokemon/ditto";
 
-// const currentWeatherUrl = https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
-
-// console.log(url)
-
 async function getWeatherData() {
   try {
     const response = await fetch(currentWeatherUrl);
     const json = await response.json();
-    return json;
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
-    // const json = await response.json();
     console.log(json);
+    return json;
   } catch (error) {
     console.error(error.message);
   }
 }
-// console.log(await getWeatherData());
 
-function getWeatherThen() {
-  fetch(currentWeatherUrl)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      console.log("test");
-      return data;
-    });
-}
-// getWeatherThen()
+getWeatherData()
 
 async function getPokemonData() {
   try {
@@ -53,4 +38,4 @@ async function getPokemonData() {
     console.error(error.message);
   }
 }
-console.log(await getPokemonData());
+// console.log(getPokemonData());
