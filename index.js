@@ -26,7 +26,7 @@ async function getWeatherData() {
   }
 }
 
-getWeatherData()
+// getWeatherData();
 
 async function getPokemonData() {
   try {
@@ -39,3 +39,30 @@ async function getPokemonData() {
   }
 }
 // console.log(getPokemonData());
+
+let displayList = [];
+fetch(currentWeatherUrl)
+  .then(function (response) {
+    // console.log(response.json());
+    return response.json();
+  })
+  .then((currentWeatherResults) => {
+    var list = document.getElementById("myList");
+    console.log(currentWeatherResults);
+    const parsedCurrentWeatherResult = JSON.parse(currentWeatherResults);
+    // debugging here //
+    parsedCurrentWeatherResult.forEach((item) => {
+      displayList.push(item.name);
+      let li = document.createElement("li");
+      li.innerText = item.name;
+      list.appendChild(li);
+    });
+    console.log(displayList);
+  })
+  .catch((err) => {
+    console.log(`Error fetching: ${err}`);
+  });
+
+[{}, {}];
+{
+}
