@@ -1,0 +1,9 @@
+{
+"pollo": "ciao", 
+"lol" : "hi",
+"pane" : "dolce",
+"test" : {
+    "test1" : "example1",
+    "test2" : "example2"
+}
+} 

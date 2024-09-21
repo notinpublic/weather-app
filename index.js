@@ -1,3 +1,5 @@
+// import jsonImport from "./test.json"
+const jsonImport = require("./test.json")
 const WEATHER_API_KEY = "c362d5f26dedb15cdba537c25d97e9b4";
 const lat = 44.34;
 const lon = 10.99;
@@ -66,3 +68,5 @@ fetch(currentWeatherUrl)
 [{}, {}];
 {
 }
+console.log(jsonImport.test.test2 + " " + " " + jsonImport.test.test1)
+
