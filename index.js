@@ -27,4 +27,5 @@ async function getWeatherData() {
     console.error(error.message);
   }
 }
-getWeatherData();
+getWeatherData(); 
+
