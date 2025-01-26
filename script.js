@@ -22,6 +22,10 @@ async function getWeatherData() {
       time: time,
     };
     console.log(result);
+    document.getElementById("degrees").innerHTML = degrees
+    document.getElementById("condition").innerHTML = condition
+    document.getElementById("time").innerHTML = time
+    document.getElementById("location").innerHTML = location
     return result;
   } catch (error) {
     console.error(error.message);
