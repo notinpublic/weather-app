@@ -1,0 +1,11 @@
+h1 {
+    color: mediumturquoise;
+}
+
+p {
+   font-weight: bold;
+}
+
+#degrees, #condition, #time, #location {
+    color: red;
+}
