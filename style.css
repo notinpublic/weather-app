@@ -1,11 +1,11 @@
-h1 {
+.title {
     color: mediumturquoise;
 }
 
-p {
+.subtitle {
    font-weight: bold;
 }
 
-#degrees, #condition, #time, #location {
+.details {
     color: red;
 }
