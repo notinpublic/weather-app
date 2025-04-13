@@ -1,3 +1,20 @@
+.main {
+    background-color: green;
+    height: 100%;
+}
+
+
+.title-container {
+    height: 100% ;
+    background-color: red;
+}
+
+.detail-container {
+    height: 50%;
+}
+
+
+
 .title {
     color: mediumturquoise;
 }
@@ -9,3 +26,4 @@
 .details {
     color: red;
 }
+
